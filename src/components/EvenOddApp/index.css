@@ -1,36 +1,45 @@
-/* Write your CSS here */
-* {
-  font-family: 'roboto';
-}
-.card {
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
+}
+
+.count-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.bgContainer {
-  width: 40%;
-  background-image: linear-gradient(to bottom, #ff6e7f, #bfe9ff);
-  padding: 30px;
-  border-radius: 15px;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 350px;
+  width: 400px;
+  border-radius: 12px;
+  background-image: linear-gradient(#ff6e7f, #bfe9ff);
+  font-family: 'Roboto';
 }
-.heading {
-  font-size: 40px;
-  font-weight: bold;
-  color: #1e293b;
+
+.count {
+  color: #0f172a;
+  font-size: 32px;
 }
-.paragraph {
-  font-size: 25px;
+
+.number-category {
   color: #334155;
+  font-size: 20px;
 }
-.button {
-  border-style: none;
-  width: 120px;
-  height: 30px;
-  border-radius: 5px;
+
+.increment-button {
+  color: #1e293b;
+  font-size: 12px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.note {
+  color: #334155;
+  font-size: 10px;
 }

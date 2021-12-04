@@ -6,7 +6,7 @@ class EvenOddApp extends Component {
   state = {count: 0}
 
   typeOfNum = () => {
-    const countN = Math.floor(Math.random() * 101 - 1)
+    const countN = Math.floor(Math.random() * 100 + 1)
     this.setState(prevObj => ({count: prevObj.count + countN}))
   }
 
@@ -19,9 +19,9 @@ class EvenOddApp extends Component {
           <h1 className="heading">Count {count}</h1>
           <p className="paragraph">Count is {type}</p>
           <button onClick={this.typeOfNum} className="button">
-            Increament
+            Increment
           </button>
-          <p>* Increase by random number by 0 to 100</p>
+          <p>*Increase By Random Number Between 0 to 100</p>
         </div>
       </div>
     )
